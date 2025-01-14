@@ -8,7 +8,7 @@ Donat un nombre enter, genera un arbre de Nadal per terminal.
 
 3
 
-5
+4
 
 **Output**
 
