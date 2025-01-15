@@ -22,8 +22,7 @@ function printTrunk(int $treeLength): void {
     else {
         $padding = intdiv($treeLength-TRUNK_LENGTH,2);
         echo str_repeat(BLANK_LEAF,$padding);
-        print(TRUNK);
-        echo str_repeat(BLANK_LEAF,$padding);
+        echo TRUNK;
     }
     echo PHP_EOL;
 }
@@ -34,7 +33,6 @@ function printLeafsRow(int $rowLength, int $treeLength): void {
         $padding = intdiv(($treeLength-$rowLength),2);
         if($padding > 0) echo str_repeat(BLANK_LEAF,$padding);
         echo str_repeat(LEAF,$rowLength);
-        if($padding > 0) echo str_repeat(BLANK_LEAF,$padding);
     }
     echo PHP_EOL;
 }
